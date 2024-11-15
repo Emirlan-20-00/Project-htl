@@ -10,6 +10,6 @@ RUN pip install gunicorn
 RUN pip install --upgrade pip && \
     pip install -r req.txt
 
-COPY online_store/nginx/nginx.conf /etc/nginx/conf.d/
+COPY nginx/nginx.conf /etc/nginx/conf.d/
 
-COPY . /app/
+COPY .. /app/
